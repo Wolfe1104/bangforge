@@ -1,109 +1,61 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BangForge DFW</title>
-  <meta name="description" content="Real connections. No games. Dallas-Fort Worth only." />
-  <style>
-    :root {
-      --bg: #0d0d0d;
-      --text: #f0f0f0;
-      --accent: #ff003c;
-      --gray: #888888;
-      --font: 'Inter', system-ui, sans-serif;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font);
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 640px;
-    }
-
-    h1 {
-      font-size: 4.5rem;
-      font-weight: 900;
-      letter-spacing: -2px;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(90deg, #ffffff, var(--accent));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .tagline {
-      font-size: 1.5rem;
-      color: var(--gray);
-      margin-bottom: 2rem;
-      font-weight: 500;
-    }
-
-    .location {
-      font-size: 1.8rem;
-      color: var(--accent);
-      margin-bottom: 3rem;
-      font-weight: 700;
-    }
-
-    button {
-      padding: 1.2rem 3rem;
-      font-size: 1.4rem;
-      font-weight: 700;
-      background: var(--accent);
-      color: #000;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 40px rgba(255, 0, 60, 0.4);
-    }
-
-    footer {
-      position: absolute;
-      bottom: 1rem;
-      font-size: 0.9rem;
-      color: var(--gray);
-    }
-  </style>
-  <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <title>BangForge | Adult Hookups in Dallas-Fort Worth</title>
+  <meta name="description" content="Real adult hookups in DFW. No games, no bullshit. Locals only. 18+." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <h1>BangForge</h1>
-    <div class="location">DFW</div>
-    <p class="tagline">Real connections. No games.<br>Dallas-Fort Worth only.</p>
-    <button id="enterBtn">Enter →</button>
+
+    <header>
+      <h1>BangForge</h1>
+      <p class="tagline">Real adult hookups in Dallas-Fort Worth.<br>No games. Locals only.</p>
+    </header>
+
+    <section class="hero-cta">
+      <h2>Find Someone Tonight in DFW</h2>
+      <p>Thousands of real adults near you looking for fun — right now.</p>
+
+      <div class="quick-signup">
+        <form id="signupForm">
+          <input type="email" placeholder="Your email" required />
+          <select required>
+            <option value="" disabled selected>I am...</option>
+            <option value="man">Man seeking Women</option>
+            <option value="woman">Woman seeking Men</option>
+            <option value="man-man">Man seeking Men</option>
+            <option value="woman-woman">Woman seeking Women</option>
+            <option value="couple">Couple seeking...</option>
+          </select>
+          <button type="submit">Get Started Free →</button>
+        </form>
+        <p class="disclaimer">18+ only • By continuing you agree to our terms</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>100% Local</h3>
+        <p>Dallas • Fort Worth • Arlington • Plano<br>Only real people in the metroplex.</p>
+      </div>
+      <div class="feature">
+        <h3>No Fake Profiles</h3>
+        <p>Real people. Real photos. Real hookups.</p>
+      </div>
+      <div class="feature">
+        <h3>Fast & Private</h3>
+        <p>Discreet messaging. Quick meets. No drama.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>BangForge © 2025 • 18+ Only • Dallas-Fort Worth Adults</p>
+    </footer>
   </div>
 
-  <footer>18+ only • Coming soon</footer>
-
-  <script>
-    document.getElementById('enterBtn').addEventListener('click', () => {
-      alert('🔥 Site launching soon. Get ready, DFW.');
-      // Later: redirect to sign-up, age gate, etc.
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
